@@ -46,6 +46,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.tbxUptadeName = new System.Windows.Forms.TextBox();
             this.btnRemove = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.tbxSearch = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProducts)).BeginInit();
             this.gbxUptade.SuspendLayout();
@@ -60,7 +63,7 @@
             this.groupBox1.Controls.Add(this.tbxAddPrice);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.tbxAddName);
-            this.groupBox1.Location = new System.Drawing.Point(22, 321);
+            this.groupBox1.Location = new System.Drawing.Point(22, 366);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(318, 210);
             this.groupBox1.TabIndex = 0;
@@ -135,7 +138,7 @@
             // 
             this.dgwProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgwProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwProducts.Location = new System.Drawing.Point(22, 12);
+            this.dgwProducts.Location = new System.Drawing.Point(22, 57);
             this.dgwProducts.Name = "dgwProducts";
             this.dgwProducts.RowHeadersWidth = 51;
             this.dgwProducts.RowTemplate.Height = 24;
@@ -152,7 +155,7 @@
             this.gbxUptade.Controls.Add(this.tbxUptadePrice);
             this.gbxUptade.Controls.Add(this.label6);
             this.gbxUptade.Controls.Add(this.tbxUptadeName);
-            this.gbxUptade.Location = new System.Drawing.Point(570, 321);
+            this.gbxUptade.Location = new System.Drawing.Point(570, 366);
             this.gbxUptade.Name = "gbxUptade";
             this.gbxUptade.Size = new System.Drawing.Size(318, 210);
             this.gbxUptade.TabIndex = 8;
@@ -225,7 +228,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(456, 496);
+            this.btnRemove.Location = new System.Drawing.Point(456, 541);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(108, 35);
             this.btnRemove.TabIndex = 8;
@@ -233,11 +236,41 @@
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(464, 549);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 16);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "label7";
+            // 
+            // lblSearch
+            // 
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSearch.Location = new System.Drawing.Point(678, 10);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(60, 21);
+            this.lblSearch.TabIndex = 10;
+            this.lblSearch.Text = "Search";
+            // 
+            // tbxSearch
+            // 
+            this.tbxSearch.Location = new System.Drawing.Point(746, 9);
+            this.tbxSearch.Name = "tbxSearch";
+            this.tbxSearch.Size = new System.Drawing.Size(142, 22);
+            this.tbxSearch.TabIndex = 11;
+            this.tbxSearch.TextChanged += new System.EventHandler(this.tbxSearch_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(973, 583);
+            this.ClientSize = new System.Drawing.Size(973, 628);
+            this.Controls.Add(this.tbxSearch);
+            this.Controls.Add(this.lblSearch);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.gbxUptade);
             this.Controls.Add(this.dgwProducts);
@@ -251,6 +284,7 @@
             this.gbxUptade.ResumeLayout(false);
             this.gbxUptade.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -274,6 +308,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbxUptadeName;
         private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblSearch;
+        private System.Windows.Forms.TextBox tbxSearch;
     }
 }
 
